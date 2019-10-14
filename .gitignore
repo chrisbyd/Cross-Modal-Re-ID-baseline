@@ -1,0 +1,4 @@
+*.txt
+Dataset/*
+net_data/*
+*.jpg
