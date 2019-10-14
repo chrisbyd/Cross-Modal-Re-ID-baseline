@@ -36,7 +36,7 @@ class IdentitySampler(Sampler):
         
         sample_color = np.arange(batchSize)
         sample_thermal = np.arange(batchSize)
-        N = np.maximum(len(train_color_label), len(train_thermal_label))
+        N = np.maximum(len(train_color_label), len(train_thermal_label)).astype(np.int32)
         
         for j in range(N/batchSize+1):
             batch_idx = np.random.choice(uni_label, batchSize, replace = False)
