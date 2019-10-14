@@ -59,11 +59,11 @@ np.random.seed(0)
 
 dataset = args.dataset
 if dataset == 'sysu':
-    data_path = 'sysu-mm01/ori_data/'
+    data_path = './Dataset/SYSU-MM01/'
     log_path = args.log_path + 'sysu_log/'
     test_mode = [1, 2] # thermal to visible
 elif dataset =='regdb':
-    data_path = 'RegDB/'
+    data_path = './Dataset/RegDB/'
     log_path = args.log_path + 'regdb_log/'
     test_mode = [2, 1] # visible to thermal
 
